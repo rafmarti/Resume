@@ -2,61 +2,6 @@
     font-family: "archivo";
     src: url(../fonts/ArchivoBlack.ttf);
 }
-p
-{
-    font-family: archivo;
-    font-size: 16px;
-    text-align:left;
-}
-body
-{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
-header
-{
-    background-color: rgb(36, 44, 47);
-    position: static;
-    color: rgb(232, 235, 228);
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#logo
-{
-    right: 40px;
-    top: 5px;
-    height: 140px;
-    width: 120px;
-}
-#buttonBox
-{
-    position: relative;
-    display: flex;
-    margin-right: 15px;
-    width: 400px;
-    justify-content: space-around;
-    right: 50px;
-    perspective: 20px;
-}
-#Screen
-{
-    display: flex;
-    flex-direction: column;
-    background-color: none;
-    top: 100px;
-    width: 100%;
-    height: 88%;
-    align-items: baseline;
-    justify-content: left;
-    background-color: rgb(232, 235, 228);
-}
 h1
 {
     position: relative;
@@ -97,16 +42,79 @@ a:visited
 { 
     color: rgb(238, 255, 219);
 }
-.scene {
+p
+{
+    font-family: archivo;
+    font-size: 16px;
+    text-align:left;
+}
+
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header
+{
+    background-color: rgb(36, 44, 47);
+    position: static;
+    color: rgb(232, 235, 228);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo
+{
+    right: 40px;
+    top: 5px;
+    height: 140px;
+    width: 120px;
+}
+#buttonBox
+{
+    position: relative;
+    display: flex;
+    margin-right: 15px;
+    width: 400px;
+    justify-content: space-around;
+    right: 50px;
+    perspective: 20px;
+}
+#git:hover
+{
+    transform: translateZ(1px);
+}
+
+#Screen
+{
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    top: 100px;
+    width: 100%;
+    height: 88%;
+    align-items: baseline;
+    justify-content: left;
+    background-color: rgb(232, 235, 228);
+}
+.scene 
+{
     position: relative;
     left: 60%;
     top: 20%;
     width: 100px;
     height: 100px;
     perspective: 300px;
-  }
-  
-  .cube {
+}
+.cube 
+{
     width: 150px;
     height: 150px;
     position: relative;
@@ -114,9 +122,9 @@ a:visited
     transform: translateZ(-100px);
     transition: transform 1s;
     animation: spinCube 6s infinite ease-in-out;
-  }
-  
-  .cube__face {
+}
+.cube__face 
+{
     position: absolute;
     width: 130px;
     height: 130px;
@@ -125,26 +133,28 @@ a:visited
     font-weight: bold;
     color: white;
     text-align: center;
-  }
+}
   
-  .cube__face--front  { background: rgb(40, 150, 90); }
-  .cube__face--right  { background: rgb(40, 150, 90); }
-  .cube__face--back   { background: rgb(40, 150, 90); }
-  .cube__face--left   { background: rgb(40, 150, 90);}
-  .cube__face--top    { background: rgb(150, 79, 83);}
-  .cube__face--bottom { background: rgb(150, 79, 83); }
+.cube__face--front  { background: rgb(40, 150, 90); }
+.cube__face--right  { background: rgb(40, 150, 90); }
+.cube__face--back   { background: rgb(40, 150, 90); }
+.cube__face--left   { background: rgb(40, 150, 90);}
+.cube__face--top    { background: rgb(150, 79, 83);}
+.cube__face--bottom { background: rgb(150, 79, 83); }
   
-  .cube__face--front  { transform: rotateY(  0deg) translateZ(80px); }
-  .cube__face--right  { transform: rotateY( 90deg) translateZ(80px); }
-  .cube__face--back   { transform: rotateY(180deg) translateZ(80px); }
-  .cube__face--left   { transform: rotateY(-90deg) translateZ(80px); }
-  .cube__face--top    { transform: rotateX( 90deg) translateZ(80px); }
-  .cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
+.cube__face--front  { transform: rotateY(  0deg) translateZ(80px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(80px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(80px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(80px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(80px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
   
-  @keyframes spinCube {
+@keyframes spinCube 
+{
       0% { transform:  rotateX(  0deg) rotateY(  0deg); }
     100% { transform:  rotateX(360deg) rotateY(90deg); }
-  }
+}
+
 #Screen2
 {
     display: flex;
@@ -168,7 +178,7 @@ a:visited
     text-align:justify;
     align-items: center;
     justify-content: space-around;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 #about
 {
@@ -179,16 +189,6 @@ a:visited
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-decoration-color: rgb(253, 255, 247);
-}
-#skills
-{
-    position: relative;
-    top: 0px;
-    left: 10px;
-    color: rgb(36, 44, 47);
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: rgb(36, 44, 47);
 }
 .description
 {
@@ -207,7 +207,6 @@ a:visited
     flex-direction: row;
     justify-content: space-between;
 }
-
 #skillsContainer
 {
     position: relative;
@@ -217,9 +216,18 @@ a:visited
     width: 30%;
     height: 80%;
     align-items: center;
-    overflow: visible;
+    overflow-y: scroll ;
 }
-
+#skills
+{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    color: rgb(36, 44, 47);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(36, 44, 47);
+}
 #barContainer
 {
     position: relative;
@@ -229,7 +237,6 @@ a:visited
     height: 80%;
     align-items: center;
 }
-
 .progressBar
 {
     display: flex;
@@ -332,8 +339,6 @@ a:visited
     }
 }
 
-
-
 #projectBar
 {
     width: 100%;
@@ -342,7 +347,19 @@ a:visited
     flex-direction: column;
     background-color: rgb(36, 44, 47);
 }
-
+#projectsTitle
+{
+    position: relative;
+    color: rgb(253, 255, 247);
+    top: 0;
+    left: 15%;
+    align-self: center;
+    justify-self: baseline;
+    padding: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(253, 255, 247);
+}
 .project
 {
     display: flex;
@@ -361,14 +378,13 @@ a:visited
     border-radius: 15px;
     width: 190px;
     height: 70px;
-
-
 }
 .project:hover
 {
     transform: translateZ(20px);
     background-color: rgb(26, 32, 34)
 }
+
 #Screen4
 {
     display: flex;
@@ -378,6 +394,16 @@ a:visited
     background-color: rgb(232, 235, 228);
     width: 100%;
     height: 90%;
+}
+#contact
+{
+    position: relative;
+    width: 100%;
+    top: 0%;
+    color: rgb(36, 44, 47);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(36, 44, 47);
 }
 form
 {
@@ -440,6 +466,7 @@ color: rgb(36, 44, 47);
 {
     background-color: rgb(24, 30, 32);
 }
+
 footer
 {
     display: flex;
@@ -449,32 +476,6 @@ footer
     background-color: rgb(36, 44, 47);
     justify-content: center;
 }
-#projectsTitle
-{
-    position: relative;
-    color: rgb(253, 255, 247);
-    top: 0;
-    left: 15%;
-    align-self: center;
-    justify-self: baseline;
-    padding: 30px;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: rgb(253, 255, 247);
-}
-#contact
-{
-    position: relative;
-    width: 100%;
-    top: 0%;
-    color: rgb(36, 44, 47);
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: rgb(36, 44, 47);
-}
-#git:hover
-{
-    transform: translateZ(1px);
-}
+
 
 
