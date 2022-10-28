@@ -1,0 +1,480 @@
+@font-face {
+    font-family: "archivo";
+    src: url(../fonts/ArchivoBlack.ttf);
+}
+p
+{
+    font-family: archivo;
+    font-size: 16px;
+    text-align:left;
+}
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+header
+{
+    background-color: rgb(36, 44, 47);
+    position: static;
+    color: rgb(232, 235, 228);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo
+{
+    right: 40px;
+    top: 5px;
+    height: 140px;
+    width: 120px;
+}
+#buttonBox
+{
+    position: relative;
+    display: flex;
+    margin-right: 15px;
+    width: 400px;
+    justify-content: space-around;
+    right: 50px;
+    perspective: 20px;
+}
+#Screen
+{
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    top: 100px;
+    width: 100%;
+    height: 88%;
+    align-items: baseline;
+    justify-content: left;
+    background-color: rgb(232, 235, 228);
+}
+h1
+{
+    position: relative;
+    font-family: archivo;
+    font-size: 50px;
+    color: rgb(36, 44, 47);
+    top: 17%;
+    left: 100px;
+}
+h2
+{
+    position: relative;
+    font-family: archivo;
+    font-size: 40px;
+    color: rgb(59, 64, 66);
+    top: 13%;
+    left: 100px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(59, 64, 66);
+    
+}
+a
+{
+    color: rgb(238, 255, 219);
+    text-decoration: none;
+    font-family: archivo;
+    font-size: 20px;
+    padding: 5px;
+}
+a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: rgb(193, 102, 107);
+    text-decoration-thickness: 3px ;
+}
+a:visited 
+{ 
+    color: rgb(238, 255, 219);
+}
+.scene {
+    position: relative;
+    left: 60%;
+    top: 20%;
+    width: 100px;
+    height: 100px;
+    perspective: 300px;
+  }
+  
+  .cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+    transition: transform 1s;
+    animation: spinCube 6s infinite ease-in-out;
+  }
+  
+  .cube__face {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    line-height: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .cube__face--front  { background: rgb(40, 150, 90); }
+  .cube__face--right  { background: rgb(40, 150, 90); }
+  .cube__face--back   { background: rgb(40, 150, 90); }
+  .cube__face--left   { background: rgb(40, 150, 90);}
+  .cube__face--top    { background: rgb(150, 79, 83);}
+  .cube__face--bottom { background: rgb(150, 79, 83); }
+  
+  .cube__face--front  { transform: rotateY(  0deg) translateZ(80px); }
+  .cube__face--right  { transform: rotateY( 90deg) translateZ(80px); }
+  .cube__face--back   { transform: rotateY(180deg) translateZ(80px); }
+  .cube__face--left   { transform: rotateY(-90deg) translateZ(80px); }
+  .cube__face--top    { transform: rotateX( 90deg) translateZ(80px); }
+  .cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
+  
+  @keyframes spinCube {
+      0% { transform:  rotateX(  0deg) rotateY(  0deg); }
+    100% { transform:  rotateX(360deg) rotateY(90deg); }
+  }
+#Screen2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(36, 44, 47);
+    width: 100%;
+    height: 103%;
+}
+#photo
+{
+   position: relative;
+   height: 100%;
+}
+.container
+{
+ 
+    height: 99%;
+    width: 45%;
+    text-align:justify;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+#about
+{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    color: rgb(253, 255, 247);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(253, 255, 247);
+}
+#skills
+{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    color: rgb(36, 44, 47);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(36, 44, 47);
+}
+.description
+{
+    position: relative;
+    align-items: center;
+    overflow: scroll;
+    font-size: 20px;
+}
+
+#Screen3
+{
+    background-color: rgb(232, 235, 228);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#skillsContainer
+{
+    position: relative;
+    top: 7%;
+    left: 5%;
+    padding-left: 10px;
+    width: 30%;
+    height: 80%;
+    align-items: center;
+    overflow: visible;
+}
+
+#barContainer
+{
+    position: relative;
+    top: 30%;
+    right: 5%;
+    width: 45%;
+    height: 80%;
+    align-items: center;
+}
+
+.progressBar
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress
+{
+    border: 5px solid black;
+    border-radius: 40px;
+    width: 70%;
+    height: 12px;
+}
+.color1
+{
+    border-radius: 15px;
+    width: 0%;
+}
+.color2
+{
+    border-radius: 15px;
+    width: 0%;
+}
+.color3
+{
+    border-radius: 15px;
+    width: 0%;
+}
+.color4
+{
+    border-radius: 15px;
+    width: 0%;
+}
+.color1.active
+{
+    background-color: #FF9F1C;
+    width: 60%;
+    height: 100%;
+    animation: progres1 1s linear;    
+}
+.color2.active
+{
+    background-color: #F71735;
+    width: 50%;
+    height: 100%;
+    animation: progres4 1s linear;    
+}
+.color3.active
+{
+    background-color: #0C7C59;
+    width: 85%;
+    height: 100%;
+    animation: progres2 1s linear;    
+}
+.color4.active
+{
+    background-color: #011627;
+    width: 30%;
+    height: 100%;
+    animation: progres3 1s linear;    
+}
+@keyframes progres1
+{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes progres4
+{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes progres2
+{
+    0%{
+      width: 0%;
+    }
+
+    100%{
+        width: 85%;
+    }
+}
+@keyframes progres3
+{
+    0%{
+      width: 0%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+
+
+#projectBar
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 44, 47);
+}
+
+.project
+{
+    display: flex;
+    background-color: transparent;
+    border: 5px solid rgb(149, 80, 82);
+    border-radius: 15px;
+
+    font-size: 20px;
+    font-family: archivo;
+    color: rgb(253, 255, 247);
+    text-align: center;
+    text-justify: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    width: 190px;
+    height: 70px;
+
+
+}
+.project:hover
+{
+    transform: translateZ(20px);
+    background-color: rgb(26, 32, 34)
+}
+#Screen4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 235, 228);
+    width: 100%;
+    height: 90%;
+}
+form
+{
+    width: 55%;
+    height: 55%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 5px solid rgb(36, 44, 47);
+
+}
+.formRow
+{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 60%;
+}
+.formBox
+{
+    background-color: transparent;
+    justify-content: space-between;
+    border: 5px solid rgb(36, 44, 47);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+input::placeholder
+{
+    font-family: archivo;
+    color: rgb(36, 44, 47);
+}
+#textBox
+{
+resize: none;
+overflow: scroll;
+font-family: archivo;
+border: 5px solid rgb(36, 44, 47);
+border-radius: 10px;
+text-align: left;
+background-color: transparent;
+color: rgb(36, 44, 47);
+}
+#sendButton
+{
+    border: 5px solid rgb(144, 76, 80);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+    width: 30%;
+    color: rgb(144, 76, 80);
+    font-family: archivo;
+}
+#sendButton:hover
+{
+    background-color: rgb(24, 30, 32);
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(36, 44, 47);
+    justify-content: center;
+}
+#projectsTitle
+{
+    position: relative;
+    color: rgb(253, 255, 247);
+    top: 0;
+    left: 15%;
+    align-self: center;
+    justify-self: baseline;
+    padding: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(253, 255, 247);
+}
+#contact
+{
+    position: relative;
+    width: 100%;
+    top: 0%;
+    color: rgb(36, 44, 47);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(36, 44, 47);
+}
+#git:hover
+{
+    transform: translateZ(1px);
+}
+
+
