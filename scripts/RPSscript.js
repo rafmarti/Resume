@@ -35,8 +35,8 @@ function compare(choiceOne, choiceTwo)
 function play(playerIndex)
 {
   let AIindex = generateAiChoice();
-  let playerSrc = choices[playerIndex] + '.png';
-  let AISrc = choices[AIindex] + '.png';
+  let playerSrc = '../images' + choices[playerIndex] + '.png';
+  let AISrc = '../images' + choices[AIindex] + '.png';
   
   document.getElementById('playerChoice').src = playerSrc;
   document.getElementById('AIChoice').src = AISrc;
