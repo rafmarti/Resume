@@ -435,7 +435,7 @@ form
     border-radius: 10px;
     font-family: archivo;
     padding: 10px;
-    
+    color: rgb(36, 44, 47);
 }
 input:focus, textarea:focus, select:focus
 {
