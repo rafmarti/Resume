@@ -436,6 +436,12 @@ form
     padding: 10px;
     
 }
+
+input:focus, textarea:focus, select:focus
+{
+    outline: none;
+}
+
 input::placeholder
 {
     font-family: archivo;
