@@ -135,12 +135,12 @@ header
     text-align: center;
 }
   
-.cube__face--front  { background: rgb(40, 150, 90); }
-.cube__face--right  { background: rgb(40, 150, 90); }
-.cube__face--back   { background: rgb(40, 150, 90); }
-.cube__face--left   { background: rgb(40, 150, 90);}
-.cube__face--top    { background: rgb(150, 79, 83);}
-.cube__face--bottom { background: rgb(150, 79, 83); }
+.cube__face--front  {background: rgb(27, 153, 139);}
+.cube__face--right  {background: rgb(27, 153, 139);}
+.cube__face--back   {background: rgb(27, 153, 139);}
+.cube__face--left   {background: rgb(27, 153, 139);}
+.cube__face--top    {background: rgb(211, 78, 36);}
+.cube__face--bottom {background: rgb(211, 78, 36);}
   
 .cube__face--front  { transform: rotateY(  0deg) translateZ(80px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(80px); }
