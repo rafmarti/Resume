@@ -35,7 +35,7 @@ a
 a:hover
 {
     text-decoration: underline;
-    text-decoration-color: rgb(193, 102, 107);
+    text-decoration-color: rgb(211, 78, 36);
     text-decoration-thickness: 3px ;
 }
 a:visited 
@@ -364,7 +364,7 @@ header
 {
     display: flex;
     background-color: transparent;
-    border: 5px solid rgb(149, 80, 82);
+    border: 5px solid rgb(211, 78, 36);
     border-radius: 15px;
 
     font-size: 20px;
@@ -454,12 +454,12 @@ color: rgb(36, 44, 47);
 }
 #sendButton
 {
-    border: 5px solid rgb(144, 76, 80);
+    border: 5px solid rgb(211, 78, 36);
     border-radius: 10px;
     font-size: 25px;
     padding: 10px;
     width: 30%;
-    color: rgb(144, 76, 80);
+    color: rgb(211, 78, 36);
     font-family: archivo;
 }
 #sendButton:hover
