@@ -433,15 +433,14 @@ form
     justify-content: space-between;
     border: 5px solid rgb(36, 44, 47);
     border-radius: 10px;
+    font-family: archivo;
     padding: 10px;
     
 }
-
 input:focus, textarea:focus, select:focus
 {
     outline: none;
 }
-
 input::placeholder
 {
     font-family: archivo;
@@ -449,14 +448,14 @@ input::placeholder
 }
 #textBox
 {
-resize: none;
-overflow: scroll;
-font-family: archivo;
-border: 5px solid rgb(36, 44, 47);
-border-radius: 10px;
-text-align: left;
-background-color: transparent;
-color: rgb(36, 44, 47);
+    resize: none;
+    overflow: scroll;
+    font-family: archivo;
+    border: 5px solid rgb(36, 44, 47);
+    border-radius: 10px;
+    text-align: left;
+    background-color: transparent;
+    color: rgb(36, 44, 47);
 }
 #sendButton
 {
