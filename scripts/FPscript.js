@@ -21,18 +21,18 @@ window.addEventListener('scroll', () => {
 
 document.getElementById('p1').onclick = function ()
 {
-    window.location.href = 'Projects/PalindromeChecker/document.html';
+    window.location.href = 'PalindromeChecker.html';
 }
 document.getElementById('p2').onclick = function ()
 {
-    window.location.href = 'Projects/CesarCipher/Document.html';
+    window.location.href = 'CesarCipher.html';
 }
 document.getElementById('p3').onclick = function ()
 {
-    window.location.href = 'Projects/RockPaperScissors/Document.html';
+    window.location.href = 'RockPaperScissors.html';
 }
 document.getElementById('p4').onclick = function ()
 {
-    window.location.href = 'Projects/RomanNumeral/document.html';
+    window.location.href = 'RomanNumeral.html';
 }
 
