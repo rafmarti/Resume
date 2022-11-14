@@ -75,7 +75,7 @@ header
     right: 40px;
     top: 5px;
     height: 100px;
-    width: 80px;
+    width: 100px;
 }
 #buttonBox
 {
@@ -142,17 +142,17 @@ header
 .cube__face--top    {background: rgb(211, 78, 36);}
 .cube__face--bottom {background: rgb(211, 78, 36);}
   
-.cube__face--front  { transform: rotateY(  0deg) translateZ(80px); }
-.cube__face--right  { transform: rotateY( 90deg) translateZ(80px); }
-.cube__face--back   { transform: rotateY(180deg) translateZ(80px); }
-.cube__face--left   { transform: rotateY(-90deg) translateZ(80px); }
-.cube__face--top    { transform: rotateX( 90deg) translateZ(80px); }
-.cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
+.cube__face--front  {transform: rotateY(  0deg) translateZ(80px);}
+.cube__face--right  {transform: rotateY( 90deg) translateZ(80px);}
+.cube__face--back   {transform: rotateY(180deg) translateZ(80px);}
+.cube__face--left   {transform: rotateY(-90deg) translateZ(80px);}
+.cube__face--top    {transform: rotateX( 90deg) translateZ(80px);}
+.cube__face--bottom {transform: rotateX(-90deg) translateZ(80px);}
   
 @keyframes spinCube 
 {
-      0% { transform:  rotateX(  0deg) rotateY(  0deg); }
-    100% { transform:  rotateX(360deg) rotateY(90deg); }
+    0% {transform:  rotateX(  0deg) rotateY(  0deg);}
+    100% {transform:  rotateX(360deg) rotateY(90deg);}
 }
 
 #Screen2
@@ -272,6 +272,11 @@ header
     border-radius: 15px;
     width: 0%;
 }
+.color5
+{
+    border-radius: 15px;
+    width: 0%;
+}
 .color1.active
 {
     background-color: #FF9F1C;
@@ -299,6 +304,13 @@ header
     width: 30%;
     height: 100%;
     animation: progres3 1s linear;    
+}
+.color5.active
+{
+    background-color: #8D80AD;
+    width: 30%;
+    height: 100%;
+    animation: progres3 1s linear;
 }
 @keyframes progres1
 {
@@ -433,13 +445,8 @@ form
     justify-content: space-between;
     border: 5px solid rgb(36, 44, 47);
     border-radius: 10px;
-    font-family: archivo;
     padding: 10px;
-    color: rgb(36, 44, 47);
-}
-input:focus, textarea:focus, select:focus
-{
-    outline: none;
+    
 }
 input::placeholder
 {
@@ -448,23 +455,23 @@ input::placeholder
 }
 #textBox
 {
-    resize: none;
-    overflow: scroll;
-    font-family: archivo;
-    border: 5px solid rgb(36, 44, 47);
-    border-radius: 10px;
-    text-align: left;
-    background-color: transparent;
-    color: rgb(36, 44, 47);
+resize: none;
+overflow: scroll;
+font-family: archivo;
+border: 5px solid rgb(36, 44, 47);
+border-radius: 10px;
+text-align: left;
+background-color: transparent;
+color: rgb(36, 44, 47);
 }
 #sendButton
 {
-    border: 5px solid rgb(211, 78, 36);
+    border: 5px solid rgb(144, 76, 80);
     border-radius: 10px;
     font-size: 25px;
     padding: 10px;
     width: 30%;
-    color: rgb(211, 78, 36);
+    color: rgb(144, 76, 80);
     font-family: archivo;
 }
 #sendButton:hover

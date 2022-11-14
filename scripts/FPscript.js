@@ -2,6 +2,7 @@ const coloredBar1 = document.querySelector('.color1');
 const coloredBar2 = document.querySelector('.color2');
 const coloredBar3 = document.querySelector('.color3');
 const coloredBar4 = document.querySelector('.color4');
+const coloredBar5 = document.querySelector('.color5');
 const limit = document.getElementById('Screen3')
 
 window.addEventListener('scroll', () => {
@@ -14,23 +15,24 @@ window.addEventListener('scroll', () => {
         coloredBar2.classList.add('active');
         coloredBar3.classList.add('active');
         coloredBar4.classList.add('active');
+        coloredBar5.classList.add('active');
     }
 })
 
 document.getElementById('p1').onclick = function ()
 {
-    window.location.href = '../PalindromeChecker.html';
+    window.location.href = 'Projects/PalindromeChecker/document.html';
 }
 document.getElementById('p2').onclick = function ()
 {
-    window.location.href = '../CesarCipher.html';
+    window.location.href = 'Projects/CesarCipher/Document.html';
 }
 document.getElementById('p3').onclick = function ()
 {
-    window.location.href = '../RockPaperScissors.html';
+    window.location.href = 'Projects/RockPaperScissors/Document.html';
 }
 document.getElementById('p4').onclick = function ()
 {
-    window.location.href = '../RomanNumeral.html';
+    window.location.href = 'Projects/RomanNumeral/document.html';
 }
 
